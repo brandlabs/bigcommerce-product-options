@@ -1,5 +1,5 @@
 {
-  "name": "bigcommerce-product-options",
+  "name": "brandlabs-bigcommerce-product-options",
   "version": "0.0.1",
   "description": "Render a handlebars template that is provided with a product's data.",
   "main": "index.js",
