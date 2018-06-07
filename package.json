@@ -1,5 +1,5 @@
 {
-  "name": "bigcommerce-category-product-options",
+  "name": "bigcommerce-product-options",
   "version": "0.0.1",
   "description": "Render a handlebars template that is provided with a product's data.",
   "main": "index.js",
@@ -13,8 +13,6 @@
   "keywords": [
     "bigcommerce",
     "product options",
-    "color swathces",
-    "category page"
   ],
   "author": "Brandlabs",
   "license": "MIT",
