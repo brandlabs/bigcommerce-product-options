@@ -5,7 +5,7 @@ Provides a way to render a handlebars template that is provided with a product's
 
 ### Installing
 
-`npm install git+ssh://git@gitlab.brandlabs.net:brandlabs/bigcommerce-category-product-options.git#develop`
+`npm install git+ssh://git@gitlab.brandlabs.net:brandlabs/bigcommerce-product-options.git#develop`
 
 ### Methods
 
