@@ -22,11 +22,18 @@
     "npm": "^6.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-plugin-dynamic-import-webpack": "^1.0.2",
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.18",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
-    "grunt-eslint": "^20.1.0"
+    "grunt-eslint": "^20.1.0",
+    "grunt-sass-lint": "^0.2.4",
+    "grunt-webpack": "^3.0.2",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.11.0"
   }
 }
