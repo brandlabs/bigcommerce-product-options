@@ -56,6 +56,9 @@ A set of key/value pairs that configure that provides configuration for both ins
     }
 ```
 
+### Notes
+- Since BigCommerce doesn't transpile external package code (for oldies like IE11), we provide transpiled files inside __dist/__ folder. You can access these files adding an alias on your `webpack.conf.js` file like `'brandlabs-bigcommerce-product-options': path.resolve(__dirname, 'node_modules/brandlabs-bigcommerce-product-options/dist/product-options.min.js')`
+
 ## Authors
 * Carson Reinke
 * Osama Aldemeery
