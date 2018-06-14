@@ -1,7 +1,6 @@
-import utils from '@bigcommerce/stencil-utils';
-
 /**
  * We extract swatch color information from product as Quick view does when clicking on Quick View button
+ * We use old fashioned AJAX request since using BigCommerce stencil-cli helpers added 16000+ lines of code when transpiling
  *
  * @export  {Class}  ProductOptions
  */
@@ -20,14 +19,29 @@ export default class ProductOptions {
      * @return {underfined}
      */
     render(config) {
-        utils.api.product.getById(this.productId, { template: config.template }, (err, response) => {
-            if (config.element) {
-                if (config.position) {
-                    config.element.insertAdjacentHTML(config.position, response);
-                } else {
-                    config.element.innerHTML = response;
+        const request = new XMLHttpRequest();
+        const endpoint = `/products.php?productId=${this.productId}`;
+
+        request.open('GET', endpoint);
+        request.withCredentials = true;
+
+        request.setRequestHeader('stencil-config', '{}');
+        request.setRequestHeader('stencil-options', JSON.stringify({ render_with: config.template }));
+
+        request.addEventListener('load', event => {
+            if (event.target.response) {
+                const response = event.target.response;
+
+                if (config.element) {
+                    if (config.position) {
+                        config.element.insertAdjacentHTML(config.position, response);
+                    } else {
+                        config.element.innerHTML = response;
+                    }
                 }
             }
         });
+
+        request.send();
     }
 }
