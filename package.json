@@ -1,27 +1,28 @@
 {
-  "name": "brandlabs-bigcommerce-product-options",
-  "version": "0.0.2",
-  "description": "Render a handlebars template that is provided with a product's data.",
+  "name": "bigcommerce-product-options",
+  "version": "0.1.0",
+  "description": "Easily render product data with a custom Handlebars template externally from the product page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt webpack"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.brandlabs.net/brandlabs/bigcommerce-product-options.git"
+    "url": "git@github.com:brandlabs/bigcommerce-product-options.git"
   },
   "keywords": [
     "bigcommerce",
     "product options"
   ],
-  "author": "Brandlabs",
+  "author": "Brand Labs",
   "license": "MIT",
   "dependencies": {
-    "@bigcommerce/stencil-utils": "^1.1.2",
-    "grunt": "^1.0.2",
-    "npm": "^6.0.0"
+    "@bigcommerce/stencil-utils": "^1.1.2"
   },
   "devDependencies": {
+    "grunt": "^1.0.2",
+    "npm": "^6.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-dynamic-import-webpack": "^1.0.2",
