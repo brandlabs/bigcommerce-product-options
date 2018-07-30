@@ -83,4 +83,4 @@ export default class Category extends PageManager {
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-[![alt text](/brandlabs.png)](http://www.brandlabs.us/?utm_source=gitlab&utm_medium=technology_referral&utm_campaign=brandlabs-bigcommerce-product-options)
+[![alt text](/assets/brandlabs.png)](http://www.brandlabs.us/?utm_source=gitlab&utm_medium=technology_referral&utm_campaign=brandlabs-bigcommerce-product-options)
