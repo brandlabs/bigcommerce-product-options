@@ -1,6 +1,6 @@
 {
   "name": "bigcommerce-product-options",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Easily render product data with a custom Handlebars template externally from the product page",
   "main": "index.js",
   "scripts": {
